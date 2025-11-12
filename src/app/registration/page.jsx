@@ -7,6 +7,7 @@ import React from 'react'
 import Link from 'next/link';
 import BarberGo from "@/images/Barber Go Logo.svg"
 import Image from 'next/image';
+import {logout, saveUserSession} from "@/lib/session"
 
 export default function RegisterPage() {
     const [nama, setNama] = useState("")
@@ -16,10 +17,7 @@ export default function RegisterPage() {
     const router = useRouter()
 
     useEffect(() => {
-        localStorage.remove('user')
-        localStorage.remove('role')
-        document.cookie = `user=; path=/; max-age=0;`
-        document.cookie = `role=; path=/; max-age=0;`
+        logout()
 
     }, [])
 

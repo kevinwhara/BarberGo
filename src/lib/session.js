@@ -13,6 +13,5 @@ export function clearCookiesLocalStorage() {
 
 export function logout() {
     localStorage.clear()
-    clearCookies()
-    window.location.href = '/'
+    clearCookiesLocalStorage()
 }

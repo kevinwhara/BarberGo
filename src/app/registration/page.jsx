@@ -37,7 +37,7 @@ export default function RegisterPage() {
 
         if (data && data.length > 0) {
             const user = data[0]
-            saveUserSession( data.user,  "user")
+            saveUserSession( nama,  "user")
             router.push("/user")
         }
     }
@@ -49,7 +49,7 @@ export default function RegisterPage() {
                 className="flex flex-col border p-10 gap-5 md:w-[400px] w-[330px] rounded-xl bg-white shadow-lg"
             >
                 <Image src={BarberGo} alt={"Barber Go"} />
-                <h1 className="text-2xl font-bold text-center">Sign In</h1>
+                <h1 className="text-2xl font-bold text-center">Sign Up</h1>
                 <p className="text-center text-gray-600">
                     Enter your credentials to continue
                 </p>

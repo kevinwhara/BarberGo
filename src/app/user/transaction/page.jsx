@@ -103,7 +103,7 @@ const Transaction = () => {
                                 className="p-2 border rounded w-full italic bg-blue-400 text-white border-black hover:bg-blue-600"
                                 onClick={() => setQris(true)}
                             >
-                                QRIS
+                                Pay Now!
                             </button>
                         </div>
                     </div>
@@ -138,8 +138,8 @@ const Transaction = () => {
                     {qris && (
                         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
                             <div className="flex flex-col bg-white rounded-lg shadow-lg p-6 gap-4 w-80">
-                                <h2 className="text-lg font-bold mb-2">Scan To Pay</h2>
-                                <img src="/qris.jpg" alt="qr code not exist" className="rounded border" />
+                                <h2 className="text-lg font-bold mb-2">Pay Here!</h2>
+                                <img src="/Payment.jpg" alt="qr code not exist" className="rounded border" />
                                 <p className="text-gray-600 mb-4">
                                     <span className="italic">Total: </span>{rupiah(amount)}
                                 </p>

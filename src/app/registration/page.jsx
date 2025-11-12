@@ -39,10 +39,7 @@ export default function RegisterPage() {
 
         if (data && data.length > 0) {
             const user = data[0]
-            localStorage.setItem("user", JSON.stringify(user))
-            localStorage.setItem("role", "user")
-            document.cookie = `user=${data.user}; path=/;`
-            document.cookie = `role=${data.role}; path=/;`
+            saveUserSession( data.user,  "user")
             router.push("/user")
         }
     }

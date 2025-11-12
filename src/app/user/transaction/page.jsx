@@ -12,7 +12,7 @@ const Transaction = () => {
     const router = useRouter()
 
     useEffect(() => {
-        const storedUser = JSON.parse(localStorage.getItem('user'))
+        const storedUser = localStorage.getItem('user')
         // const storedURL = localStorage.getItem('imgURL')
         if (storedUser) setUser(storedUser)
         // if (storedURL) setURL(storedURL)
